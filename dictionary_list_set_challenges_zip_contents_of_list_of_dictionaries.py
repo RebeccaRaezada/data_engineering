@@ -14,10 +14,8 @@ print(zipped_res_dict)
 
 # Second Way for python2 or without zip function
 for x in range(len(pair1.values()[0])):
-    
-    for y in range(len(pair2.values()[0])):
         
-        if x==y:
-            res_dict.append({nbr_set[x]:name_set[x]})
+	res_dict.append({nbr_set[x]:name_set[x]})
             
 print(res_dict)
+#explanation- arlier i had a nested for loop for nbr and names separately and then compared when outer_loop_num=inner_loop_num, it caused the time complexity to be n^2, but I realised it can be linear by getting rid of two loops.  
