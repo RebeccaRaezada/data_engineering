@@ -18,4 +18,6 @@ for x in range(len(pair1.values()[0])):
 	res_dict.append({nbr_set[x]:name_set[x]})
             
 print(res_dict)
-#explanation- arlier i had a nested for loop for nbr and names separately and then compared when outer_loop_num=inner_loop_num, it caused the time complexity to be n^2, but I realised it can be linear by getting rid of two loops.  
+#explanation- Earlier had a nested for loop for nbr and names lists separately
+#and then compared when outer_loop_num=inner_loop_num. 
+#But it caused the time complexity to be n^2, but I realised it can be linear by getting rid of two loops for just one loop to go through correct position.  
