@@ -9,8 +9,8 @@ name_set=pair2.values()[0]
 
 # One way in python3 with zip function
 zip_iterator = zip(nbr_set,name_set)
-res_dict= dict(zip_iterator)
-print(res_dict)
+zipped_res_dict= dict(zip_iterator)
+print(zipped_res_dict)
 
 # Second Way for python2 or without zip function
 for x in range(len(pair1.values()[0])):
