@@ -1,25 +1,35 @@
 
 s=11011010110001
 
+s=1111
+
 def count_jumping_0s(s):
     s=str(s)
-
-#count longest seq of 1
     s_list=s.split('0')
-    cntr=0
-    for x in range(0,len(s_list)):
-        if len(s_list[x]) > cntr:
-          cntr = len(s_list[x])
-    print ("longest seq of 1")
-    print(cntr)
+
+    if len(s_list) == 0:
+        print (0)
+    elif len(s_list) == 1:
+        print len(s_list[0])
+#count longest seq of 1
+    else:
+        cntr=0
+        for x in range(0,len(s_list)):
+            if len(s_list[x]) > cntr:
+              cntr = len(s_list[x])
+        print ("longest seq of 1")
+        print(cntr)
         
 #count longest seq of 1 if we can skip one 0      
 
-    s_list=s.split('0')
-    cntr=0
-    for x in range(0,len(s_list)-1):
-         cur_cnt = s_list[x]+s_list[x+1]
-         if cur_cnt > cntr:
-             cntr=cur_cnt
-    print ("longest seq of 1 if we can skip one 0")
-    print (len(cntr))
+    #s_list=s.split('0')
+        cntr=0
+        for x in range(0,len(s_list)-1):
+             cur_cnt = int(s_list[x]) + int(s_list[x+1])
+             if cur_cnt > cntr:
+                 cntr=cur_cnt
+        print ("longest seq of 1 if we can skip one 0")
+        print (cntr)
+        
+
+count_jumping_0s(s)
