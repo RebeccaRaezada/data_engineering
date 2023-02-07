@@ -8,4 +8,4 @@ Now Folks here is what I did:
 5. created a repository on online github called data_enineering
 6. added the repo as remote host by: git remote add origin 'https://github.com/RebeccaRaezada/data_engineering.git/'
 7. pushed the changes to remote host: git push origin git_world
-8. fetched any changes made on the repo: git pull origin git_world [ kust like this readme contents im writing now ]
+8. fetched any changes made on the repo: git pull origin git_world [ just like this readme contents im writing now ]
