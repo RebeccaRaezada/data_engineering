@@ -1,0 +1,13 @@
+name: 'freshcart_funnel_project'
+version: '1.0.0'
+profile: 'default'
+
+source-paths: ["models"]
+test-paths: ["tests"]
+data-paths: ["seeds"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"

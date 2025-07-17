@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: int_user_funnels
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+          - unique
+      - name: did_signup
+        tests:
+          - not_null
